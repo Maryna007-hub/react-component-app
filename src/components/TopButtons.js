@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function TopButtons() {
   const cities = [
@@ -30,7 +30,7 @@ function TopButtons() {
     <button key={city.id} className='text-white text-lg font-medium'>{city.title}</button>
 ))}
     </div>
-  )
+  );
 }
 
 export default TopButtons;

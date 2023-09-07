@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       
       <h1 className='text-2xl font-bold text-red-500'>Hello</h1>
-<UilReact/>
+<UilReact size={50}/>
 
       <footer>
           This project was coded by 

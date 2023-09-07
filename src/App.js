@@ -1,6 +1,6 @@
 
 import './App.css';
-import UilReact from '@iconscout/react-unicons/icons/uil-react'
+import UilReact from '@iconscout/react-unicons/icons/uil-react';
 import TopButtons from './components/TopButtons';
 import Inputs from './components/Inputs';
 

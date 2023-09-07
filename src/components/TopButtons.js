@@ -25,9 +25,13 @@ function TopButtons() {
     
   ]
   return (
-    <div>TopButtons</div>
+    <div className='flex items-center justijy-center my-6'>
+{cities.map((city) => (
+    <button className='text-whte text-lg font-medium'>{city.title}</button>
+))}
+    </div>
   )
 }
 
-export default TopButtons
+export default TopButtons;
 

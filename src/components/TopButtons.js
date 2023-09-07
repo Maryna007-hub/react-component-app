@@ -1,10 +1,10 @@
 import React from 'react'
 
-function TopBottons() {
+function TopButtons() {
   return (
     <div>TopBottons</div>
   )
 }
 
-export default TopBottons
+export default TopButtons
 

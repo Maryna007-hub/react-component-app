@@ -7,6 +7,8 @@ function App() {
     <div className="App">
       
       <h1 className='text-2xl font-bold text-red-500'>Hello</h1>
+<UilReact/>
+
       <footer>
           This project was coded by 
            <a href='/'> Maryna Holinka </a>

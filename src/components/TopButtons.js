@@ -2,7 +2,7 @@ import React from 'react'
 
 function TopButtons() {
   return (
-    <div>TopBottons</div>
+    <div>TopButtons</div>
   )
 }
 

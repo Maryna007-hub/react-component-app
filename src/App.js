@@ -4,6 +4,7 @@ import UilReact from '@iconscout/react-unicons/icons/uil-react';
 import TopButtons from './components/TopButtons';
 import Inputs from './components/Inputs';
 import TimeAndLocation from './components/TimeAndLocation';
+import TemparatureAndDetails from './components/TemparatureAndDetails';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Inputs/>
       
       <TimeAndLocation/>
+      <TemparatureAndDetails/>
     </div>
       );
 }

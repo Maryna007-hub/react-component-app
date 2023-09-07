@@ -6,7 +6,7 @@ import TopButtons from './components/TopButtons';
 function App() {
   return (
     <div className="mx-auto max-w-screen-md mt-4 py-32 px-32 bg-gradient-to-br 
-    from-cyan-600 to-blue-700 shadow-xl shadow-gray-400 rounded-[5px]">
+    from-cyan-600 to-blue-700 shadow-xl shadow-gray-400 rounded-[7px]">
       <TopButtons/>
     </div>
       );

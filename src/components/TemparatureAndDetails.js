@@ -1,5 +1,13 @@
 import React from 'react'
+import {UilArrowUp,
+    UilArrowDown,
+    UilTemperature,
+    UilTear,
+    UilWind,
+    UilSun,
+    UilSinset,
 
+} from '@iconscout/react-unicons';
 function TemparatureAndDetails() {
   return (
     <div>
@@ -8,10 +16,25 @@ function TemparatureAndDetails() {
         </div>
         <div className='flex  flex-row items-center justify-between py-3 text-white'>
             <img src='http://openweathermap.org/img/wn/01d@2x.png' alt='' className='w-20'/>
-            <p className='flex flex-col space-y-2'>30°</p>
+           
+            <p className='text-5xl'>30°</p>
+            <div className='flex flex-col space-y-2'>
+              <div className='flex font-light text-sm items-center justify-center'>
+               <UilTemperature size={19} className='mr-2'/>
+               Real fell:<span className='font-medium ml-2'>28°</span>
+              </div>
+              <div className='flex font-light text-sm items-center justify-center'>
+               <UilTear size={19} className='mr-2'/>
+               Humidity:<span className='font-medium ml-2'>56%</span>
+              </div>
+              <div className='flex font-light text-sm items-center justify-center'>
+               <UilWind size={19} className='mr-2'/>
+               Wind:<span className='font-medium ml-2'>12 km/h</span>
+              </div>
+            </div>
         </div>
     </div>
   )
 }
 
-export default TemparatureAndDetails
+export default TemparatureAndDetails;

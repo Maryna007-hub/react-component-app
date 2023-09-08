@@ -66,9 +66,11 @@ const getFormattedWeatherData = async (searchParams) => {
     return {...formattedCurrentWeather, ...formattedForecastWeather};
 }
 
-const formatToLocalTime = 
-(secs, zone, format = "ccc, dd LLL yyyy' | Local time: 'h:mm a"
+const formatToLocalTime = (
+secs,
+zone,
+format = "ccc, dd LLL yyyy' | Local time: 'h:mm a"
 ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
 
 
-export default getFormattedWeatherData
+export default getFormattedWeatherData;

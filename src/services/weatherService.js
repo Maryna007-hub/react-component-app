@@ -7,9 +7,9 @@ const BASE_URL = 'https://api.openweathermap.org/data/2.5/';
 
 // https://api.openweathermap.org/data/3.0/onecall?
 //lat={lat}&lon={lon}&exclude={part}&appid={API key}
-const getWeatherData = (infoType,serchParams) => {
+const getWeatherData = (infoType,searchParams) => {
     const url = new URL(BASE_URL + '/' + infoType);
-    url.search = new URLSearchParams({...serchParams, appid:API_KEY});
+    url.search = new URLSearchParams({...searchParams, appid:API_KEY});
 
    
     return fetch(url)
@@ -53,14 +53,14 @@ const formatForecastWeather = (data) => {
     return {timezone, daily, hourly };
 }
 
-const getFormattedWeatherData = async (serchParams) => {
+const getFormattedWeatherData = async (searchParams) => {
     const formattedCurrentWeather = await getWeatherData
-    ('weather', serchParams).then(formatCurrentWeather);
+    ('weather', searchParams).then(formatCurrentWeather);
     
     const {lat, lon} = formattedCurrentWeather
 
     const formattedForecastWeather = await getWeatherData('onecall', {
-        lat, lon, exclude: 'current,minutely,alerts', units: serchParams.units
+        lat, lon, exclude: 'current,minutely,alerts', units: searchParams.units
     }).then(formatForecastWeather);
 
     return {...formattedCurrentWeather, ...formattedForecastWeather};

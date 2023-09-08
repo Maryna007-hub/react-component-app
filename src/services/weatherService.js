@@ -34,12 +34,23 @@ name, dt, country, sunrise, sunset, details, icon, speed}
 }
 
 const formatForecastWeather = (data) => {
-    let { timezone, daily, hourly} = data;// hourly 1 forecast //
-    daily = daily.slice(1,6).map(d => {
+    let { timezone, daily, hourly} = data;
+    daily = daily.slice(1,6).map(d => {               //daily 2 forecast //
         return {
-            title: formatToLocalTime(d.dt, timezone, 'hh:mm a')
+            title: formatToLocalTime(d.dt, timezone, 'ccc'),
+            temp: d.temp.day,
+            icon: d.weather[0].icon
         }
-    }) // daily 2 forecast //
+    }); 
+
+    hourly = hourly.slice(1,6).map(d => {                   // hourly 1 forecast //
+        return {
+            title: formatToLocalTime(d.dt, timezone, 'hh:mm a'),
+            temp: d.temp.day,
+            icon: d.weather[0].icon
+        }
+    });
+    return {timezone, daily, hourly };
 }
 
 const getFormattedWeatherData = async (serchParams) => {
@@ -52,11 +63,11 @@ const getFormattedWeatherData = async (serchParams) => {
         lat, lon, exclude: 'current,minutely,alerts', units: serchParams.units
     }).then(formatForecastWeather);
 
-    return formattedCurrentWeather
+    return {...formattedCurrentWeather, ...formattedForecastWeather};
 }
 
 const formatToLocalTime = 
-(secs, zone, format = "cccc, dd LLL yyyy' | Local time: 'h:mm a"
+(secs, zone, format = "ccc, dd LLL yyyy' | Local time: 'h:mm a"
 ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
 
 

@@ -6,7 +6,7 @@ import Inputs from './components/Inputs';
 import TimeAndLocation from './components/TimeAndLocation';
 import TemparatureAndDetails from './components/TemparatureAndDetails';
 import Forecast from './components/Forecast';
-import getWeatherData from './services/weatherService';
+// import getWeatherData from './services/weatherService';
 import getFormattedWeatherData from './services/weatherService';
 
 

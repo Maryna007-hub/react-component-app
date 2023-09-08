@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Forecast(title) {
+function Forecast() {
   return (
     <div>
         <div className='flex items-center justify-start mt-6'>
          <p className='text-white font-medium uppercase'>
-         {title}
+         daily forecast
         </p>
         </div>
         <hr className='my-2'/>

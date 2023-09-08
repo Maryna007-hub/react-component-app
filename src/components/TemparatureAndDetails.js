@@ -39,6 +39,23 @@ function TemparatureAndDetails() {
              <p className='font-light'>
               Rise: <span className='font-medium ml-2'>07:03 AM</span>
              </p>
+             <p className='font-light'>|</p>
+
+             <UilSunset/>
+             <p className='font-light'>
+              Set: <span className='font-medium ml-2'>07:53 PM</span>
+             </p>
+             <p className='font-light'>|</p>
+             <UilSun/>
+             <p className='font-light'>
+              High: <span className='font-medium ml-2'>47°</span>
+             </p>
+             <p className='font-light'>|</p>
+             <UilSun/>
+             <p className='font-light'>
+              Low: <span className='font-medium ml-2'>40°</span>
+             </p>
+             <p className='font-light'>|</p>
            </div>
     </div>
   )

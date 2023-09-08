@@ -33,6 +33,13 @@ function TemparatureAndDetails() {
               </div>
             </div>
         </div>
+          <div className='flex flex-row items-center justify-center
+            space-x-2 text-white text-sm py-3'>
+             <UilSun/>
+             <p>
+                
+             </p>
+           </div>
     </div>
   )
 }

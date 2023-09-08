@@ -36,8 +36,8 @@ function TemparatureAndDetails() {
           <div className='flex flex-row items-center justify-center
             space-x-2 text-white text-sm py-3'>
              <UilSun/>
-             <p>
-                
+             <p className='font-light'>
+              Rise: <span className='font-medium ml-2'></span>
              </p>
            </div>
     </div>

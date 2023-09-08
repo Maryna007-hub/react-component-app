@@ -37,7 +37,7 @@ function TemparatureAndDetails() {
             space-x-2 text-white text-sm py-3'>
              <UilSun/>
              <p className='font-light'>
-              Rise: <span className='font-medium ml-2'></span>
+              Rise: <span className='font-medium ml-2'>07:03 AM</span>
              </p>
            </div>
     </div>

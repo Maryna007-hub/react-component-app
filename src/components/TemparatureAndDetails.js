@@ -8,6 +8,7 @@ import {UilArrowUp,
     UilSunset,
 
 } from '@iconscout/react-unicons';
+
 function TemparatureAndDetails() {
   return (
     <div>
@@ -28,6 +29,7 @@ function TemparatureAndDetails() {
                Humidity:<span className='font-medium ml-2'>56%</span>
               </div>
               <div className='flex font-light text-sm items-center justify-center'>
+                
                <UilWind size={19} className='mr-2'/>
                Wind:<span className='font-medium ml-2'>12 km/h</span>
               </div>

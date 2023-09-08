@@ -5,7 +5,7 @@ function Forecast(title) {
     <div>
         <div className='flex items-center justify-start mt-6'>
          <p className='text-white font-medium uppercase'>
-         {title}
+        {/* {title} */} 
         </p>
         </div>
         <hr className='my-2'/>
